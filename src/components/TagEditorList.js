@@ -20,6 +20,7 @@ class TagEditorList extends Component {
                         return (
                             <TagEditorListItem
                                 key={index}
+                                index={index}
                                 tagName={tag}
                                 removed={this.props.removed}
                             />

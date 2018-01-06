@@ -14,7 +14,7 @@ class TagEditorListItem extends Component {
                 {this.props.tagName}
                 <i
                     className="fa fa-close"
-                    onClick={this.props.removed}
+                    onClick={ e => this.props.removed(e, this.props.index) }
                 ></i>
             </span>
         )
